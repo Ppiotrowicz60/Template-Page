@@ -108,6 +108,9 @@ article {
   width: 70%;
   height: auto;
 }
+section {
+  padding: 4rem 4rem;
+}
 .news {
   padding: 0 20%;
 }
@@ -116,18 +119,21 @@ article {
   border-radius: 7px;
 }
 .social {
-  padding: 4rem 4rem;
   background-color: #181818;
 }
 .social div {
   padding: 10px 0;
 }
 
+.video {
+  padding: 0 20%;
+}
 .gallery {
   background-color: #181818;
   display: flex;
   flex-flow: column;
   align-items: stretch;
+  padding: 0;
 }
 .gallery h1 {
   padding: 4rem 4rem;
@@ -135,8 +141,13 @@ article {
 }
 .photo-block {
   display: grid;
-  grid-auto-flow: column;
-  padding: 3rem;
+
+  grid-template-columns: repeat(3, fit-content(250px));
+  padding: 1rem;
+}
+.photo-block img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -189,8 +200,6 @@ footer p {
     width: calc(100%-10vw);
   }
   .photo-block {
-    grid-auto-flow: column;
-    grid-template-columns: auto;
-    width: 100%;
+    grid-template-columns: repeat(6, fit-content(400px));
   }
 }
