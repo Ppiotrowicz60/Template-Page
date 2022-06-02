@@ -252,7 +252,6 @@ td {
   .main-content {
     display: grid;
     grid-auto-flow: column;
-    width: calc(100%-10vw);
     align-items: center;
     gap: 10vw;
   }
@@ -271,7 +270,6 @@ td {
   }
   .social {
     padding-left: 9rem;
-    width: calc(100%-10vw);
   }
   table {
     max-width: 600px;
